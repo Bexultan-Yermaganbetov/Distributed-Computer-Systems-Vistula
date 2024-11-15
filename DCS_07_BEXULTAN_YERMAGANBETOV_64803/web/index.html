@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Form and Complex Number Calculator</title>
+</head>
+<body>
+    <h1>Form Submission</h1>
+    <form action="MyServlet" method="post">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required><br><br>
+
+        <label for="gender">Gender:</label>
+        <select id="gender" name="gender" required>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+        </select><br><br>
+
+        <label for="agree">
+            <input type="checkbox" id="agree" name="agree" required> I agree to the terms and conditions
+        </label><br><br>
+
+        <label for="real">Real part:</label>
+        <input type="number" step="any" id="real" name="real" required><br><br>
+
+        <label for="imaginary">Imaginary part:</label>
+        <input type="number" step="any" id="imaginary" name="imaginary" required><br><br>
+
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
